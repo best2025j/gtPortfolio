@@ -26,12 +26,14 @@ export default { components: { Button, FormInput, FormTextarea } };
 				<FormTextarea label="Message" textareaIdentifier="message" />
 
 				<div>
+					<a href="mailto:owoyemiwilfred@gmail.com">
 					<Button
 						title="Send Message"
 						class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
 						type="submit"
 						aria-label="Send Message"
 					/>
+				</a>
 				</div>
 			</form>
 		</div>

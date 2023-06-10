@@ -6,12 +6,12 @@ export default {
 				{
 					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'I, WILFRED, A Front-End Website Developer with a Passion for Creating Beautiful Websites. A Solution-driven FRONT-END web developer who adapt faster at contributing to highly collaborative work environment and finding solutions. I have a Proven experience at developing consumer-focused websites using HTML, CSS, and JavaScript and their respective libraries and framework (vue.js). Good knowledge of the best practices for web design, user experience, and speed.',
 				},
 				{
 					id: 2,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'I have always been interested in web development, and I have the necessary skills required for the role. I have a good understanding of HTML, CSS, JavaScript. I am currently improving my Backend development skills by learning various new technologies.',
 				},
 			],
 		};
@@ -35,7 +35,7 @@ export default {
 			<p
 				v-for="bio in bios"
 				:key="bio.id"
-				class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+				class="font-san- mb-4 text-ternary-dark dark:text-ternary-light text-lg"
 			>
 				{{ bio.bio }}
 			</p>

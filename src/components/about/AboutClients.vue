@@ -7,48 +7,44 @@ export default {
 	},
 	data: () => {
 		return {
-			clientsHeading: 'Some of the brands I have worked with',
+			clientsHeading: 'MY SKILLS',
 			clients: [
 				{
 					id: 1,
-					title: 'Amazon',
-					img: require('@/assets/images/brands/amazon_gray.png'),
+					title: 'Tailwind CSS',
+					img: require('@/assets/images/tailwind.jpg'),
 				},
 				{
 					id: 2,
-					title: 'Sony',
-					img: require('@/assets/images/brands/sony_gray.png'),
+					title: 'css',
+					img: require('@/assets/images/react.png'),
 				},
 				{
 					id: 3,
-					title: 'Adidas',
-					img: require('@/assets/images/brands/adidas_gray.png'),
+					title: 'js',
+					img: require('@/assets/images/js.png'),
 				},
 				{
 					id: 4,
-					title: 'FILA',
-					img: require('@/assets/images/brands/fila_gray.png'),
+					title: 'vue',
+					img: require('@/assets/images/vue.png'),
 				},
 				{
 					id: 5,
-					title: 'NB',
-					img: require('@/assets/images/brands/nb_gray.png'),
+					title: 'html',
+					img: require('@/assets/images/html.png'),
 				},
 				{
 					id: 6,
-					title: 'SAMSUNG',
-					img: require('@/assets/images/brands/samsung_gray.png'),
+					title: 'bootstrap',
+					img: require('@/assets/images/css.png'),
 				},
 				{
 					id: 7,
-					title: 'CANON',
-					img: require('@/assets/images/brands/canon_gray.png'),
+					title: 'bs',
+					img: require('@/assets/images/bootsrap.png'),
 				},
-				{
-					id: 7,
-					title: 'PUMA',
-					img: require('@/assets/images/brands/puma_gray.png'),
-				},
+				
 			],
 		};
 	},

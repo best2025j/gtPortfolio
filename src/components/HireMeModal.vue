@@ -38,7 +38,7 @@ export default {
 						class="modal-wrapper flex items-center z-30"
 					>
 						<div
-							class="modal max-w-md mx-5 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
+							class="modal max-w-md mx-4 md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative"
 						>
 							<div
 								class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark"
@@ -46,7 +46,7 @@ export default {
 								<h5
 									class="text-primary-dark dark:text-primary-light text-xl"
 								>
-									What project are you looking for?
+									How do i help you? 
 								</h5>
 								<button
 									class="px-4 text-primary-dark dark:text-primary-light"
@@ -55,7 +55,7 @@ export default {
 									<i data-feather="x"></i>
 								</button>
 							</div>
-							<div class="modal-body p-5 w-full h-full">
+							<div class="max-w-full modal-body p-5 w-full h-full">
 								<form class="max-w-xl m-4 text-left">
 									<FormInput
 										label="Full Name"
@@ -96,14 +96,12 @@ export default {
 										label="Details"
 										textareaIdentifier="details"
 									/>
-
-									<div class="mt-7 pb-4 sm:pb-1">
-										<Button
-											title="Send Request"
-											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
-											type="submit"
+									<div class="mt-5 pb-3 sm:pb-1">
+										<a
+											href="mailto:owoyemiwilfred@gmail.com"
+											class=" mt-0 px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
 											aria-label="Submit Request"
-										/>
+										>Send Request</a>
 									</div>
 								</form>
 							</div>

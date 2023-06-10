@@ -32,8 +32,8 @@ export default {
 			:placeholder="label"
 			v-bind="$attrs"
 			@input="$emit('update:val', $event.target.value)"
-			cols="14"
-			rows="6"
+			cols="10"
+			rows="4"
 		></textarea>
 	</div>
 </template>

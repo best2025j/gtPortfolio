@@ -9,7 +9,7 @@ export default {
 	data: () => {
 		return {
 			projects,
-			projectsHeading: 'Projects Portfolio',
+			projectsHeading: 'FRONT-END DEV',
 			selectedCategory: '',
 			searchProject: '',
 		};
@@ -72,7 +72,7 @@ export default {
 					mb-4
 				"
 			>
-				Search projects by title or filter by category
+				Samples
 			</h3>
 			<div
 				class="
@@ -103,7 +103,7 @@ export default {
 						></i>
 					</span>
 					<input
-						v-model="searchProject"
+						v-model="search"
 						class="font-general-medium
 						pl-3
 						pr-1

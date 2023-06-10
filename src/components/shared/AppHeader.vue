@@ -20,23 +20,23 @@ export default {
 			categories: [
 				{
 					id: 1,
-					value: 'web',
-					name: 'Web Application',
+					value: 'Responsiveness',
+					name: 'Responsive and web pages',
 				},
 				{
 					id: 2,
-					value: 'mobile',
-					name: 'Mobile Application',
+					value: 'Front-End',
+					name: 'Intereactive user end',
 				},
 				{
 					id: 3,
-					value: 'ui-ux',
-					name: 'UI/UX Design',
+					value: 'vue.js project',
+					name: 'Vue.js Projects',
 				},
 				{
 					id: 4,
-					value: 'branding',
-					name: 'Branding & Anim',
+					value: 'E-commerce',
+					name: 'E-commerce front-end designs',
 				},
 			],
 		};
@@ -87,14 +87,14 @@ export default {
 					<router-link to="/"
 						><img
 							v-if="theme === 'light'"
-							src="@/assets/images/logo-dark.svg"
-							class="w-36"
+							src="@/assets/images/logo-white.jpeg"
+							class="w-20 rounded-xl"
 							alt="Dark Logo"
 						/>
 						<img
 							v-else
-							src="@/assets/images/logo-light.svg"
-							class="w-36"
+							src="@/assets/images/logo-dark.jpeg"
+							class="w-20 rounded-xl"
 							alt="Light Logo"
 						/>
 					</router-link>
