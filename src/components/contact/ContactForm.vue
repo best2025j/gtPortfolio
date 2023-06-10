@@ -1,8 +1,7 @@
 <script>
 import Button from '../reusable/Button.vue';
 import FormInput from '../reusable/FormInput.vue';
-import FormTextarea from '../reusable/FormTextarea.vue';
-export default { components: { Button, FormInput, FormTextarea } };
+export default { components: { Button, FormInput,} };
 </script>
 
 <template>
@@ -23,7 +22,7 @@ export default { components: { Button, FormInput, FormTextarea } };
 					inputType="email"
 				/>
 				<FormInput label="Subject" inputIdentifier="subject" />
-				<FormTextarea label="Message" textareaIdentifier="message" />
+				<!-- <FormTextarea label="Message" textareaIdentifier="message" /> -->
 
 				<div>
 					<a href="mailto:owoyemiwilfred@gmail.com">

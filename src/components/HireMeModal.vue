@@ -2,10 +2,9 @@
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
-import FormTextarea from './reusable/FormTextarea.vue';
 export default {
 	props: ['showModal', 'modal', 'categories'],
-	components: { Button, FormInput, FormTextarea },
+	components: { Button, FormInput,},
 	data() {
 		return {};
 	},
@@ -91,11 +90,6 @@ export default {
 											</option>
 										</select>
 									</div>
-
-									<FormTextarea
-										label="Details"
-										textareaIdentifier="details"
-									/>
 									<div class="mt-5 pb-3 sm:pb-1">
 										<a
 											href="mailto:owoyemiwilfred@gmail.com"
