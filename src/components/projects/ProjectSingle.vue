@@ -24,7 +24,7 @@ export default {
         {{ project.title }}
       </p>
       <span
-        class="font-general-medium text-sm capitalize text-ternary-dark dark:text-ternary-light "
+        class="font-general-medium text-sm capitalize text-ternary-dark dark:text-ternary-light"
         >{{ project.category }}</span
       >
     </div>
