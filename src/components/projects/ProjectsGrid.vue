@@ -53,7 +53,7 @@ export default {
     <!-- Projects grid title -->
     <div class="text-center">
       <p
-        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
+        class="font-general-semibold text-2xl sm:text-3xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
       >
         {{ projectsHeading }}
       </p>
@@ -62,7 +62,7 @@ export default {
     <!-- Filter and search projects -->
     <div class="mt-10 sm:mt-10">
       <h3
-        class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl font-normal mb-4"
+        class="font-general-regular font-bold text-center text-secondary-dark dark:text-ternary-light text-md sm:text-lg mb-4"
       >
         Samples
       </h3>
