@@ -35,7 +35,7 @@ export default {
               href="#"
               :class="
                 info.title == 'Website' || info.title == 'Phone'
-                  ? 'hover:underline cursor-pointer'
+                  ? 'hover:underline cursor-pointer font-black'
                   : ''
               "
               aria-label="Project Website and Phone"
