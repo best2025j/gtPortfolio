@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div class="container mx-auto relative mt-40">
-    <img src="@/assets/images/footer.png" alt="" class="" />
+    <img src="@/assets/images/footer.png" alt="" class="hidden md:flex" />
     <div
       class=" border-primary-light dark:border-secondary-dark absolute left-0 right-0 top-0 py-2"
     >

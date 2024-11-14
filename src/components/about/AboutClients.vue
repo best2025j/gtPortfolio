@@ -122,7 +122,7 @@ export default {
     >
       {{ clientsHeading }}
     </p>
-    <div class="grid grid-cols-3 sm:grid-cols-10 mt-10 sm:mt-14 gap-2">
+    <div class="grid grid-cols-3 md:grid-cols-10 mt-10 md:mt-14 gap-2">
       <AboutClientSingle
         v-for="client in clients"
         :key="client.id"
