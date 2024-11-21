@@ -29,7 +29,7 @@ export default {
       <p
         v-for="bio in bios"
         :key="bio.id"
-        class="font-san mb-4 text-ternary-dark dark:text-ternary-light md:text-lg"
+        class="font-san mb-4 text-ternary-dark dark:text-ternary-light md:text-base text-sm"
       >
         {{ bio.bio }}
       </p>
