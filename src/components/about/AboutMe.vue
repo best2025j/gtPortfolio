@@ -34,5 +34,6 @@ export default {
         {{ bio.bio }}
       </p>
     </div>
+    
   </div>
 </template>
