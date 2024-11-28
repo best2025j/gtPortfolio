@@ -12,6 +12,7 @@ export default {
     >
       {{ singleProjectHeader.singleProjectTitle }}
     </p>
+
     <div class="flex space-x-2">
       <div class="flex items-center">
         <i
@@ -19,7 +20,7 @@ export default {
           class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
         ></i>
         <span
-          class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light "
+          class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
           >{{ singleProjectHeader.singleProjectDate }}</span
         >
       </div>

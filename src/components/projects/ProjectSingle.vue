@@ -7,7 +7,7 @@ export default {
 <template>
   <router-link
     to="/projects/single-project"
-    class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-darkj"
+    class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-slate-100 dark:bg-slate-300"
     aria-label="Single Project"
   >
     <div>
@@ -32,5 +32,3 @@ export default {
 </template>
 
 <style lang="scss" scoped></style>
-
-
