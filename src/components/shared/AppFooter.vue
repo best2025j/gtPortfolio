@@ -20,10 +20,10 @@ export default {
 </script>
 
 <template>
-  <div class="container mx-auto relative mt-40">
+  <div class="container mx-auto relative mt-40 mb-14">
     <img src="@/assets/images/footer.png" alt="" class="hidden md:flex" />
     <div
-      class=" border-primary-light dark:border-secondary-dark absolute left-0 right-0 top-0 py-2"
+      class="border-primary-light dark:border-secondary-dark absolute left-0 right-0 top-0 py-2"
     >
       <!-- Footer social links -->
       <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
