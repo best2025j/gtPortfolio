@@ -14,17 +14,39 @@ export default {
       searchProject: "",
     };
   },
+
+  // computed: {
+  //   // Get the filtered projects
+  //   filteredProjects() {
+  //     if (this.selectedCategory) {
+  //       return this.filterProjectsByCategory();
+  //     } else if (this.searchProject) {
+  //       return this.filterProjectsBySearch();
+  //     }
+  //     return this.projects;
+  //   },
+  // },
+
   computed: {
     // Get the filtered projects
     filteredProjects() {
+      let filtered;
       if (this.selectedCategory) {
-        return this.filterProjectsByCategory();
+        filtered = this.filterProjectsByCategory();
       } else if (this.searchProject) {
-        return this.filterProjectsBySearch();
+        filtered = this.filterProjectsBySearch();
+      } else {
+        filtered = this.projects;
       }
-      return this.projects;
+
+      // Only show 3 projects if not on the projects page
+      if (!this.$route.path.includes("/projects")) {
+        return filtered.slice(0, 3);
+      }
+      return filtered;
     },
   },
+  
   methods: {
     // Filter projects by category
     filterProjectsByCategory() {

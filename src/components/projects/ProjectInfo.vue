@@ -93,7 +93,7 @@ export default {
         </div>
       </div>
     </div>
-''
+    ''
     <!-- Single project right section details -->
     <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
       <p
