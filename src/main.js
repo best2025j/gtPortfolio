@@ -8,24 +8,27 @@ import "aos/dist/aos.css";
 
 const app = createApp(App);
 
-app.mount("#app");
+// Use plugins
+app.use(router);
+app.use(BackToTop);
 
 // Initialize AOS
 AOS.init({
-  duration: 1200, // Animation duration
-  offset: 200, // Offset from the trigger point
-  easing: "ease-in-out", // Easing function
-  once: true, // Whether animation should happen only once
+  duration: 1200,
+  offset: 200,
+  easing: "ease-in-out",
+  once: true,
 });
 
+// Initialize Feather Icons
 const feather = require("feather-icons");
 feather.replace();
 
-createApp(App).use(router).use(BackToTop).mount("#app");
+// Mount the app only once
+app.mount("#app");
 
+// Theme handling
 const appTheme = localStorage.getItem("theme");
-
-// Check what is the active theme and change theme when user clicks on the theme button in header.
 if (
   appTheme === "dark" &&
   document.querySelector("body").classList.contains("app-theme")

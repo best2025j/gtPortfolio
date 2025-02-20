@@ -97,7 +97,7 @@ export default {
               class="w-20 h-20 rounded-full p-3 shadow-md shadow-black"
               alt="Light Logo"
             />
-            <h1 class="text-black dark:text-white" >Audu Godstime</h1>
+            <h1 class="text-black dark:text-white">Audu Godstime</h1>
           </router-link>
         </div>
 
@@ -158,7 +158,7 @@ export default {
         <theme-switcher
           :theme="theme"
           @themeChanged="updateTheme"
-          class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
+          class="ml-4 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
         />
       </div>
     </div>
@@ -175,8 +175,8 @@ export default {
 
 <!-- <style scoped>
 #nav a.router-link-exact-active {
-  @apply text-indigo-700;
-  @apply dark:text-indigo-400;
-  @apply font-medium;
+ @apply  text-indigo-700
+   dark:text-indigo-400
+   font-medium;
 }
 </style> -->

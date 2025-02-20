@@ -12,6 +12,7 @@ export default {
       projectsHeading: "FRONT-END DEV",
       selectedCategory: "",
       searchProject: "",
+      search: "",
     };
   },
 
@@ -46,7 +47,7 @@ export default {
       return filtered;
     },
   },
-  
+
   methods: {
     // Filter projects by category
     filterProjectsByCategory() {
@@ -101,7 +102,7 @@ export default {
             ></i>
           </span>
           <input
-            v-model="search"
+            v-model="searchProject"
             class="font-general-medium pl-3 pr-1 sm:px-4 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
             id="name"
             name="name"
@@ -111,7 +112,10 @@ export default {
             aria-label="Name"
           />
         </div>
-        <ProjectsFilter @filter="selectedCategory = $event" />
+        <ProjectsFilter
+          @filter="selectedCategory = $event"
+          :select="selectedCategory"
+        />
       </div>
     </div>
 

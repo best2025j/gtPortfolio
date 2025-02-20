@@ -72,7 +72,7 @@ export default router;
 
 /**
  * Below code will display the component/active page title
- * Powered by: Nangialai Stoman
+ * Powered by: godstime
  */
 
 // This callback runs before every route change, including on page load.
