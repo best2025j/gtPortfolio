@@ -4,7 +4,21 @@ import feather from "feather-icons";
 import FormInput from "./reusable/FormInput.vue";
 
 export default {
-  props: ["showModal", "modal", "categories"],
+  name: "HireMeModal", // Add component name
+  props: {
+    showModal: {
+      type: Function,
+      required: true,
+    },
+    modal: {
+      type: Boolean,
+      required: true,
+    },
+    categories: {
+      type: Array,
+      required: true,
+    },
+  },
   components: { FormInput },
   data() {
     return {
@@ -19,17 +33,27 @@ export default {
     };
   },
   mounted() {
-    feather.replace();
+    if (feather) {
+      feather.replace();
+    }
+    emailjs.init("K7xLosDl8FEdeGzpq");
   },
   updated() {
-    feather.replace();
+    if (feather) {
+      feather.replace();
+    }
   },
   methods: {
     async sendEmail(e) {
       e.preventDefault();
 
-      if (!this.form.name || !this.form.email || !this.form.project) {
-        this.statusMessage = "Please fill all fields.";
+      if (
+        !this.form.name ||
+        !this.form.email ||
+        !this.form.project ||
+        !this.form.message
+      ) {
+        this.statusMessage = "Please fill all fields";
         return;
       }
 
@@ -37,26 +61,36 @@ export default {
       this.statusMessage = "Sending...";
 
       try {
-        await emailjs.send(
+        const result = await emailjs.send(
           "service_4xizkmq",
           "template_ywya2vi",
           {
+            to_name: "Godstime",
             from_name: this.form.name,
             from_email: this.form.email,
             project_type: this.form.project,
-            message: `New project request from ${this.form.name}`,
+            message: this.form.message,
+            reply_to: this.form.email,
           },
-          "OHYztClP2C7E3Glpw"
+          "K7xLosDl8FEdeGzpq"
         );
 
-        this.statusMessage = "Message sent successfully!";
-        this.form = { name: "", email: "", project: "", message: "" };
+        if (result.status === 200) {
+          this.statusMessage = "Message sent successfully!";
+          this.form = {
+            name: "",
+            email: "",
+            project: "",
+            message: "",  
+          };
 
-        // Close modal after success
-        setTimeout(() => {
-          this.showModal();
-          this.statusMessage = "";
-        }, 5000);
+          setTimeout(() => {
+            if (this.showModal) {
+              this.showModal();
+            }
+            this.statusMessage = "";
+          }, 5000);
+        }
       } catch (error) {
         console.error("EmailJS Error:", error);
         this.statusMessage = "Failed to send message. Please try again.";
@@ -105,6 +139,7 @@ export default {
                       v-model="form.name"
                       label="Full Name"
                       inputIdentifier="name"
+                      class="capitalize"
                       required
                     />
                   </div>
@@ -112,9 +147,8 @@ export default {
                   <div class="mb-4">
                     <FormInput
                       v-model="form.email"
-                      label="Email"
+                      label="Email Address"
                       inputIdentifier="email"
-                      inputType="email"
                       required
                     />
                   </div>
@@ -162,15 +196,18 @@ export default {
                     ></textarea>
                   </div>
 
-                  <!-- Status message -->
+                  <!-- Status message with improved visibility -->
                   <div v-if="statusMessage" class="mb-4">
                     <p
                       :class="{
                         'text-green-500':
                           statusMessage.includes('successfully'),
-                        'text-red-500': statusMessage.includes('Failed'),
+                        'text-red-500':
+                          !statusMessage.includes('successfully') &&
+                          !statusMessage.includes('Sending'),
                         'text-blue-500': statusMessage.includes('Sending'),
                       }"
+                      class="font-medium text-sm"
                     >
                       {{ statusMessage }}
                     </p>

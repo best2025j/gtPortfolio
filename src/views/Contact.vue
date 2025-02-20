@@ -44,7 +44,7 @@ export default {
     class="container mx-auto flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
   >
     <div
-      class="container mx-auto flex flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
+      class="container mx-auto flex flex-col-reverse md:flex-row py-5"
     >
       <!-- Contact form -->
       <ContactForm />
@@ -54,3 +54,10 @@ export default {
       </div>
   </div>
 </template>
+
+
+<!-- public-key: K7xLosDl8FEdeGzpq
+
+private-key: wS6F67wvUA63zt6RbPHQb
+
+template- id: template_ywya2vi -->

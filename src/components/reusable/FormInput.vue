@@ -9,7 +9,7 @@ export default {
       type: String,
       default: "",
     },
-    val: {
+    modelValue: {
       type: [String, Number],
       default: "",
     },
@@ -18,6 +18,7 @@ export default {
       default: "text",
     },
   },
+  emits: ["update:modelValue"],
 };
 </script>
 
@@ -25,19 +26,20 @@ export default {
   <div>
     <label
       class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
-      :for="label"
-      >{{ label }}</label
+      :for="inputIdentifier"
     >
+      {{ label }}
+    </label>
     <input
       class="w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
       :id="inputIdentifier"
       :name="inputIdentifier"
       :placeholder="label"
       :aria-label="inputIdentifier"
-      :value="val"
+      :value="modelValue"
       :type="inputType"
       v-bind="$attrs"
-      @input="$emit('update:val', $event.target.value)"
+      @input="$emit('update:modelValue', $event.target.value)"
       required
     />
   </div>
