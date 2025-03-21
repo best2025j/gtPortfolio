@@ -5,12 +5,13 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="mb-8 flex-col flex items-center">
     <img
       :src="client.img"
       :alt="client.title"
-      class="w-44 p-4 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-full mb-8 cursor-pointer"
+      class="w-24 shadow-ternary-dark dark:shadow-ternary-light shadow-sm rounded-full mb-4 hover:scale-105 cursor-pointer"
     />
+    <span class="text-sm dark:text-white">{{ client.title }}</span>
   </div>
 </template>
 

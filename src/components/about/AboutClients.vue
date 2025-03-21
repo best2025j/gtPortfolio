@@ -16,7 +16,7 @@ export default {
         },
         {
           id: 2,
-          title: "css",
+          title: "Css",
           img: require("@/assets/svgs/CSS.svg"),
         },
         {
@@ -51,7 +51,7 @@ export default {
         },
         {
           id: 9,
-          title: "bs",
+          title: "Vite",
           img: require("@/assets/svgs/Vite-Dark.svg"),
         },
         {
@@ -101,12 +101,12 @@ export default {
         },
         {
           id: 19,
-          title: "bs",
+          title: "WindiCSS",
           img: require("@/assets/svgs/WindiCSS-Dark.svg"),
         },
         {
           id: 20,
-          title: "bs",
+          title: "Redux",
           img: require("@/assets/svgs/Redux.svg"),
         },
       ],
