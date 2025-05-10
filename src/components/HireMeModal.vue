@@ -112,9 +112,9 @@ export default {
       ></div>
       <main class="flex flex-col items-center justify-center h-full w-full">
         <transition name="fade-up-down">
-          <div v-show="modal" class="modal-wrapper flex items-center z-30">
+          <div v-show="modal" class="modal-wrapper w-full md:w-auto flex items-center z-30">
             <div
-              class="modal max-w-md mx-4 md:w-[700px] bg-secondary-light dark:bg-primary-dark h-full shadow-lg flex-row rounded-3xl relative"
+              class="modal max-w-md mx-4 md:w-[700px] w-full bg-secondary-light dark:bg-primary-dark h-full shadow-lg flex-row rounded-3xl relative"
             >
               <div
                 class="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark ml-3.5"

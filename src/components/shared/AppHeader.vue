@@ -138,7 +138,11 @@ export default {
       </div>
 
       <!-- Header links -->
-      <AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
+      <AppHeaderLinks
+        :showModal="showModal"
+        :isOpen="isOpen"
+        @close-menu="isOpen = false"
+      />
 
       <!-- Header right section buttons -->
       <div

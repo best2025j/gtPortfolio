@@ -8,7 +8,7 @@ export default {
   <div class="w-full md:w-1/2">
     <div class="text-left max-w-xl px-6">
       <h2
-        class="font-black text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8"
+        class="font-black text-2xl text-primary-dark dark:text-primary-light md:mt-12 mt-6 mb-8"
       >
         Contact details
       </h2>

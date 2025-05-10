@@ -79,7 +79,7 @@ export default {
 <template>
   <div class="w-full md:w-1/2">
     <div
-      class="max-w-xl m-4 p-7 bg-secondary-light dark:bg-secondary-dark rounded-3xl shadow-xl text-left"
+      class="max-w-xl m-4 md:p-7 p-4 bg-secondary-light dark:bg-secondary-dark rounded-3xl shadow-xl text-left"
     >
       <p
         class="font-black text-primary-dark dark:text-primary-light text-2xl mb-8"

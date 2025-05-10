@@ -57,19 +57,19 @@ const projects = [
     img: require("@/assets/images/kampus.png"),
   },
   {
-    id: 9,
+    id: 10,
     title: "Paradido landing-page",
     category: "child-minder and business platform",
     img: require("@/assets/images/landing-page.png"),
   },
   {
-    id: 9,
+    id: 11,
     title: "Paradido business-page",
     category: "Paradido business Portal",
     img: require("@/assets/images/business-page.png"),
   },
   {
-    id: 9,
+    id: 12,
     title: "Paradido logins",
     category: "Paradido login Portal",
     img: require("@/assets/images/login.png"),

@@ -41,10 +41,10 @@ export default {
 
 <template>
   <div
-    class="container mx-auto flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
+    class="md:container mx-auto flex-col-reverse md:flex-row w-full"
   >
     <div
-      class="container mx-auto flex flex-col-reverse md:flex-row py-5"
+      class="md:container mx-auto flex flex-col-reverse md:flex-row w-full"
     >
       <!-- Contact form -->
       <ContactForm />

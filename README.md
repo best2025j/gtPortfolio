@@ -14,7 +14,7 @@ A simple portfolio starter theme built with Vue.js v3 and Tailwind CSS v3.
 -   React Version: [https://github.com/realstoman/react-tailwindcss-portfolio](https://github.com/realstoman/react-tailwindcss-portfolio)
 -   Next.js Version: [https://github.com/realstoman/nextjs-tailwindcss-portfolio](https://github.com/realstoman/nextjs-tailwindcss-portfolio)
 
-## Features
+## Features 
 
 -   Simple and responsive design
 -   [Vue.js v3](https://vuejs.org) with [Vue Router](https://router.vuejs.org)

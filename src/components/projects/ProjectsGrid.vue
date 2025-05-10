@@ -89,6 +89,7 @@ export default {
       >
         Samples
       </h3>
+      
       <div
         class="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-2"
       >
@@ -103,7 +104,7 @@ export default {
           </span>
           <input
             v-model="searchProject"
-            class="font-general-medium pl-3 pr-1 sm:px-4 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+            class="font-general-medium  py-2 border-1 w-full border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
             id="name"
             name="name"
             type="search"

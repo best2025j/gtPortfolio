@@ -53,7 +53,7 @@ export default {
   </div>
 </template>
 
-<style>
+<!-- <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -104,4 +104,4 @@ export default {
     opacity: 1;
   }
 }
-</style>
+</style> -->
