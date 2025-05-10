@@ -50,20 +50,32 @@ export default {
 
   methods: {
     // Filter projects by category
+    // filterProjectsByCategory() {
+    //   return this.projects.filter((item) => {
+    //     let category =
+    //       item.category.charAt(0).toUpperCase() + item.category.slice(1);
+    //     console.log(category);
+    //     return category.includes(this.selectedCategory);
+    //   });
+    // },
+
+    //  Filter projects by category and stark
     filterProjectsByCategory() {
-      return this.projects.filter((item) => {
-        let category =
-          item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        console.log(category);
-        return category.includes(this.selectedCategory);
-      });
+      if (!this.selectedCategory || this.selectedCategory === "All Projects") {
+        return this.projects;
+      }
+      return this.projects.filter((project) =>
+        project.stack.includes(this.selectedCategory)
+      );
     },
+
     // Filter projects by title search
     filterProjectsBySearch() {
       let project = new RegExp(this.searchProject, "i");
       return this.projects.filter((el) => el.title.match(project));
     },
   },
+
   mounted() {
     feather.replace();
   },
@@ -89,11 +101,11 @@ export default {
       >
         Samples
       </h3>
-      
+
       <div
-        class="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-2"
+        class="flex items-center justify-between w-full border-b border-primary-light dark:border-secondary-dark pb-3 gap-2"
       >
-        <div class="flex justify-between gap-2">
+        <div class="flex gap-2 flex-grow basis-0">
           <span
             class="hidden sm:block bg-primary-light dark:bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer"
           >
@@ -104,7 +116,7 @@ export default {
           </span>
           <input
             v-model="searchProject"
-            class="font-general-medium  py-2 border-1 w-full border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+            class="font-general-medium py-2 border-1 w-full md:w-auto border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
             id="name"
             name="name"
             type="search"
@@ -113,10 +125,13 @@ export default {
             aria-label="Name"
           />
         </div>
-        <ProjectsFilter
-          @filter="selectedCategory = $event"
-          :select="selectedCategory"
-        />
+
+        <div class="flex-1 md:flex-none">
+          <ProjectsFilter
+            @filter="selectedCategory = $event"
+            :select="selectedCategory"
+          />
+        </div>
       </div>
     </div>
 

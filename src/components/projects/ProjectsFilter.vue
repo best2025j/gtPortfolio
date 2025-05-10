@@ -9,9 +9,10 @@ export default {
     selectOptions: {
       type: Array,
       default: () => [
-        "Frontend web development",
-        "vue project",
+        "Nuxt project",
+        "Vue project",
         "React project",
+        "Next project",
       ],
     },
   },
@@ -19,11 +20,13 @@ export default {
 </script>
 
 <template>
+
+  <!-- custom select design -->
   <select
     @change="$emit('filter', $event.target.value)"
     :name="select"
     :id="select"
-    class=" px-4 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+    class="px-4 w-full md:w-44 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
   >
     <option value class="text-sm sm:text-md">All Projects</option>
     <option
