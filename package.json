@@ -10,6 +10,8 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/forms": "^0.5.3",
+    "@tresjs/cientos": "^4.3.0",
+    "@tresjs/core": "^4.3.3",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-plugin-router": "^5.0.8",
@@ -21,6 +23,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^7.8.3",
+    "three": "^0.176.0",
     "vue": "^3.2.45",
     "vue-backtotop": "^1.6.1",
     "vue-feather": "^2.0.0",

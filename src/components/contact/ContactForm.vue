@@ -53,7 +53,7 @@ export default {
         );
 
         if (result.status === 200) {
-          this.statusMessage = "Message sent successfully!";
+          this.statusMessage = "Message sent successfully! Thank you. I will get back to you as soon as possible.";
           this.form = {
             name: "",
             email: "",
