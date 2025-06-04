@@ -8,6 +8,7 @@ const projects = [
     stack: ["Vue project"],
     category: "Responsive Frontend with Vue.js",
     img: require("@/assets/images/mobile-project-2.jpg"),
+    url: "https:/",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projects = [
     stack: ["Vue project"],
     category: "Interactive E-Commerce UI",
     img: require("@/assets/images/web-project-2.jpg"),
+    url: "https:/",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const projects = [
     stack: ["Vue project"],
     category: "Engaging Social Networking App",
     img: require("@/assets/images/mobile-project-1.jpg"),
+    url: "https:/",
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ const projects = [
     stack: ["Next project"],
     category: "Innovative Educational Platform",
     img: require("@/assets/images/kwaratech.png"),
+    url: "https://kwaratech.vercel.app/",
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ const projects = [
     stack: ["React project"],
     category: "Real-Time Messaging App",
     img: require("@/assets/images/buzz.png"),
+    url: "https://buzzz.vercel.app/",
   },
   {
     id: 6,
@@ -43,6 +48,7 @@ const projects = [
     stack: ["React project"],
     category: "Telemedicine Platform UI",
     img: require("@/assets/images/juva.png"),
+    url: "https://juva.netlify.app/",
   },
   {
     id: 7,
@@ -50,6 +56,7 @@ const projects = [
     stack: ["Nuxt project"],
     category: "Job Seeker and Recruiter Platform",
     img: require("@/assets/images/workonnet.png"),
+    url: "https://workonnect.africa/",
   },
   {
     id: 8,
@@ -57,6 +64,7 @@ const projects = [
     stack: ["Nuxt project"],
     category: "Admin Dashboard Interface",
     img: require("@/assets/images/admin.png"),
+    url: "https://paradido.netlify.app/dashboard/child-minder/home",
   },
   {
     id: 9,
@@ -64,6 +72,7 @@ const projects = [
     stack: ["Next project"],
     category: "Student Resource Portal",
     img: require("@/assets/images/kampus.png"),
+    url: "https://kampusly.netlify.app/",
   },
   {
     id: 10,
@@ -71,6 +80,7 @@ const projects = [
     stack: ["Nuxt project"],
     category: "child-minder and business platform",
     img: require("@/assets/images/landing-page.png"),
+    url: "https://paradido.netlify.app/",
   },
   {
     id: 11,
@@ -78,6 +88,7 @@ const projects = [
     stack: ["Nuxt project"],
     category: "Paradido business Portal",
     img: require("@/assets/images/business-page.png"),
+    url: "https://paradido.netlify.app/auth/create-business",
   },
   {
     id: 12,
@@ -85,6 +96,7 @@ const projects = [
     stack: ["Nuxt project"],
     category: "Paradido login Portal",
     img: require("@/assets/images/login.png"),
+    url: "https:/https://paradido.netlify.app/auth/login",
   },
 ];
 
