@@ -8,7 +8,6 @@ const projects = [
     stack: ["Vue project"],
     category: "Responsive Frontend with Vue.js",
     img: require("@/assets/images/mobile-project-2.jpg"),
-    url: "https:/",
   },
   {
     id: 2,
@@ -16,7 +15,6 @@ const projects = [
     stack: ["Vue project"],
     category: "Interactive E-Commerce UI",
     img: require("@/assets/images/web-project-2.jpg"),
-    url: "https:/",
   },
   {
     id: 3,
@@ -24,7 +22,6 @@ const projects = [
     stack: ["Vue project"],
     category: "Engaging Social Networking App",
     img: require("@/assets/images/mobile-project-1.jpg"),
-    url: "https:/",
   },
   {
     id: 4,
