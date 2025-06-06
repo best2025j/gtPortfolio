@@ -3,27 +3,6 @@
 
 const projects = [
   {
-    id: 1,
-    title: "Portfolio Website",
-    stack: ["Vue project"],
-    category: "Responsive Frontend with Vue.js",
-    img: require("@/assets/images/mobile-project-2.jpg"),
-  },
-  {
-    id: 2,
-    title: "Online Store Platform",
-    stack: ["Vue project"],
-    category: "Interactive E-Commerce UI",
-    img: require("@/assets/images/web-project-2.jpg"),
-  },
-  {
-    id: 3,
-    title: "Community App",
-    stack: ["Vue project"],
-    category: "Engaging Social Networking App",
-    img: require("@/assets/images/mobile-project-1.jpg"),
-  },
-  {
     id: 4,
     title: "KwaraTech Project",
     stack: ["Next project"],
@@ -58,7 +37,7 @@ const projects = [
   {
     id: 8,
     title: "Admin Panel",
-    stack: ["Nuxt project"],
+    stack: ["Vue project"],
     category: "Admin Dashboard Interface",
     img: require("@/assets/images/admin.png"),
     url: "https://paradido.netlify.app/dashboard/child-minder/home",
@@ -74,7 +53,7 @@ const projects = [
   {
     id: 10,
     title: "Paradido landing-page",
-    stack: ["Nuxt project"],
+    stack: ["Vue project"],
     category: "child-minder and business platform",
     img: require("@/assets/images/landing-page.png"),
     url: "https://paradido.netlify.app/",
