@@ -44,7 +44,7 @@ export default {
     class="md:container mx-auto flex-col-reverse md:flex-row w-full"
   >
     <div
-      class="md:container mx-auto flex flex-col-reverse md:flex-row w-full"
+      class="md:container mx-auto justify-between flex flex-col-reverse md:flex-row w-full"
     >
       <!-- Contact form -->
       <ContactForm />
