@@ -31,14 +31,13 @@ export default {
     </div>
   </router-link>
  -->
- 
- 
- <!-- links For external websites -->
- <a
+
+  <!-- links For external websites -->
+  <a
     :href="project.url"
     target="_blank"
     rel="noopener noreferrer"
-    class="block rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-slate-100 dark:bg-slate-300"
+    class="block rounded-3xl shadow-lg hover:shadow-xl hover:scale-105 cursor-pointer mb-10 sm:mb-0 bg-slate-100 dark:bg-slate-300"
     aria-label="Visit Project Website"
   >
     <div>
